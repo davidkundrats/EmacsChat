@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Chatbot():
-    """ The abstract class providing the template for the chatbot, all instances of a chatbot must implement this class """
+    """ The abstract class providing the template for the chatbot:all instances of a chatbot must implement this class """
     def __init__(self, embeddings, model, vector_store):
         self.embeddings = embeddings
         self.model = model
