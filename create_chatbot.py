@@ -8,7 +8,7 @@ from flask import jsonify
 
 def create_chatbot(): 
     try: 
-        embeddings = OpenAIEmbeddings(model="text-embedding-ada-002", openai_api_key =os.environ.get('OPEN_AI_KEY'))
+        embeddings = OpenAIEmbeddings(model="text-embedding-ada-002",openai_api_key = os.environ.get('OPEN_AI_KEY'))
         model = ChatOpenAI(
             temperature= 0,
             openai_api_key=os.environ.get('OPEN_AI_KEY')
